@@ -1,0 +1,77 @@
+.navbar {
+  background-color: #00b894;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  animation: slide-down 1s ease forwards;
+}
+
+.logo {
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links .navtext {
+  font-size: 15px;
+  color: white;
+  font-family: inherit;
+  font-weight: bolder;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.nav-links .navtext:focus,
+.nav-links .navtext:hover {
+  color: #fff;
+}
+
+.nav-links .navtext:focus:after,
+.nav-links .navtext:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.nav-links .navtext:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+footer {
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
